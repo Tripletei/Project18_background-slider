@@ -14,7 +14,6 @@ body {
     height: 100vh;
     margin: 0;
     overflow:hidden;
-    background-image:url('https://images.unsplash.com/photo-1503435980610-a51f3ddfee50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
     background-position: center center;
     background-size: cover;
     transition: 0.4s;
@@ -25,7 +24,7 @@ body::before{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vh;
+    width: 100%;
     height: 100vh;
     background-color: rgba(0,0,0,0.7);
     z-index: -1;
@@ -65,6 +64,12 @@ body::before{
     top: 50%;
     transform: translateY(-50%);
     z-index: 100%;
+    cursor: pointer;
+    color: #fff;
+}
+
+.arrrow:focus {
+    outline:0;
 }
 
 
